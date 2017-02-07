@@ -1,0 +1,8 @@
+<div class='nextline'>
+  <ul>
+    <li ng-repeat='item in items'>
+      {{item.name + ' , ' + item.short_name + ' , '+ item.description}}
+      <button ng-click=onRemove({index:$index}) class='btn btn-warning'>Don't want this one!</button>
+    </li>
+  </ul>
+</div>
